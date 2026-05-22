@@ -1,0 +1,7 @@
+---
+profiles:
+  shelby_arcade:
+    private_key: "0xf7b77078f5fce233f1533fb33b8706ec7c02a6d7341cad235868f4d1a0094846"
+    public_key: "0x96005f1fb45057c640952aa129567638a7f8ae01fe06b016d1e765b7e156c5b6"
+    account: 75ae89e208f02fc681cc308f9cd505242a22a805e09ba21ca15732e86df0169d
+    rest_url: "https://api.shelbynet.shelby.xyz/v1"

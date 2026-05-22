@@ -1,0 +1,9 @@
+[package]
+name = "ShelbyArcade"
+version = "1.0.0"
+
+[addresses]
+shelby_arcade = "_"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", type = "internal", subdir = "aptos-move/framework/aptos-framework", rev = "mainnet" }
