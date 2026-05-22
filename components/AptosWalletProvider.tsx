@@ -52,11 +52,12 @@ const InnerWalletProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return;
     }
     console.log("[WalletAdapter] Current network state:", networkName);
+    const networkStr = String(networkName);
     const isCorrect = 
-      networkName === "Shelbynet Testnet" || 
-      networkName === "Shelbynet" || 
-      networkName?.toLowerCase().includes("testnet") || 
-      networkName === "UNKNOWN";
+      networkStr === "Shelbynet Testnet" || 
+      networkStr === "Shelbynet" || 
+      networkStr.toLowerCase().includes("testnet") || 
+      networkStr === "UNKNOWN";
       
     setIsNetworkWrong(!isCorrect);
   }, [networkName, isConnected]);
