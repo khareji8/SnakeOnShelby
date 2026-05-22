@@ -175,7 +175,8 @@ const InnerWalletProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Helper to check if a wallet extension is ready/installed
   const checkExtension = (nameStr: string) => {
     const w = wallets?.find(w => w.name.toLowerCase().includes(nameStr.toLowerCase()));
-    return w?.readyState === "Installed" || w?.readyState === "Loadable";
+    const stateStr = String(w?.readyState);
+    return stateStr === "Installed" || stateStr === "Loadable";
   };
 
   const hasPetraExtension = checkExtension("petra");
