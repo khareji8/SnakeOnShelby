@@ -321,7 +321,7 @@ export const AptosWalletProvider: React.FC<{ children: React.ReactNode }> = ({ c
         "Nightly", 
         "OKX Wallet", 
         "Rabby Wallet"
-      ]}
+      ] as any}
     >
       <InnerWalletProvider>
         {children}
